@@ -1,5 +1,10 @@
-// Gib deinen Code hier ein
+/**
+ * Blocks to communicate with midi device.
+ */
 namespace midi {
+    /**
+     * Start playing the specified note on the specified channel.
+     */
     export function noteOn(kanal: number, note: number) {
         midiCommand3(144 + kanal, note, 70)
     }
